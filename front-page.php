@@ -41,8 +41,13 @@
   <!--hero with button -->
 
   <section class="py-5 text-center container">
-    <div class="hero-image" style="height: 100%; background-image: url(<?php echo get_theme_file_uri('beach.png') ?>">
-      <div class="hero-text">
+    <div class="hero-image" style="height: 400px; background-image: url(<?php echo get_theme_file_uri('beach.png') ?>">
+      <div class="hero-text" style="text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;">
         <h1 style="font-style: Georgia; color: #fff; font-size:50px;">Muutto tulossa?</h1>
 
         <button>Ota yhteyttä ja kysy tarjous</button>
@@ -66,6 +71,15 @@
   <!--hero with button end -->
 
 
+<!-- Services box-->
+    <div>
+     <div class="container">
+       <div class="row">
+         <div class="card-body"><h2 style="text-align:center; font-size:35px;">Palvelut<h2><hr></div>
+       </div>
+    </div>
+    </div>
+<!-- Services box end-->
   <div class="album py-5 bg-light">
     <div class="container">
 
