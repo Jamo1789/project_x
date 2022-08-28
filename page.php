@@ -2,16 +2,16 @@
 get_header();
 ?>
  <section class="py-5 text-center container">
-    <div class="hero-image" style="height: 200px; background-image: url(<?php echo get_theme_file_uri('beach.png') ?>">
+    <div class="hero-image" style="height: 100px; background-image: url(<?php echo get_theme_file_uri('beach.png') ?>">
       <div class="hero-text" style="text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;">
-        <h1 style="font-style: Georgia; color: #fff; font-size:50px;"><?php echo get_the_title(); ?></h1>
+        <h1 style="font-style: Georgia; color: #fff; font-size:50px; font-size: 3.5vw;"><?php echo get_the_title(); ?></h1>
 
-     
+
       </div>
 
       <div id="popup1" class="overlay">
@@ -20,7 +20,7 @@ get_header();
           <div class="content">
             <br><br>
             <h2></h2>
-            
+
             <br><br><br>
           </div>
         </div>
@@ -28,7 +28,41 @@ get_header();
       <!--lightbox style popup goes here-->
     </div>
   </section>
-//echo get_the_id();
+
+  <!-- Page content start-->
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+
+
+        <div class="col" style="">
+        <?php the_content(); ?>
+
+        </div>
+
+
+        <?php
+
+
+        contactForm();
+        ?>
+
+
+
+        </div>
+
+
+
+        <!-- main row end -->
+      </div>
+
+      <!-- container end -->
+    </div>
+    <br>
+  </div>
+
 <?php
+//echo get_the_id();
 get_footer()
 ?>

@@ -71,6 +71,56 @@ function projext_files() {
 
 add_action('wp_enqueue_scripts', 'projext_files');
 
+//collect form variables and mail
+if(isset($_POST["submit"])){
+$username = $_POST["name"];
+$email = $_POST["email"];
+$subject = $_POST["subject"];
+$message = $_POST["message"];
+
+mail($email,$subject,$message);
+echo "<script>console.log('something hapened');</script>";
+}
+//collect form variables and mail
+
+
+//Contact page
+function contactForm () {
+if(get_the_ID() == 75){ ?>
+
+<div class="container" style="width: 100%;">
+    <div class="row">
+        <div class="col-sm-9 col-md-8 col-lg-8 mx-auto">
+            <div class="card card-signin my-5">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Ota Yhteyttä</h5>
+                    <!-- TÄSSÄ KÄYNNISTETÄÄN EMAIL SKRIPTI -->
+                    <form action="email-script.php" method="post" class="form-signin">
+                        <!-- TÄSSÄ KÄYNNISTETÄÄN EMAIL SKRIPTI -->
+                        <div class="form-label-group">
+                            <label for="inputEmail">Sähköposti <span style="color: #FF0000">*</span></label>
+                            <input type="text" name="fromEmail" id="fromEmail" class="form-control"  value="" required>
+                        </div> <br/>
+                   
+                        <label for="inputPassword">Aihe <span style="color: #FF0000">*</span></label>
+                        <div class="form-label-group">
+                            <input type="text" id="subject" name="subject" class="form-control" placeholder="Aihe" required>
+                        </div><br/>
+                        <label for="inputPassword">Viesti <span style="color: #FF0000">*</span></label>
+                        <div class="form-label-group">
+                            <textarea  id="message" name="message" class="form-control" placeholder="Viesti" required ></textarea>
+                        </div> <br/>
+                        <button type="submit" name="sendMailBtn" class="btn btn-lg btn-primary btn-block text-uppercase" >Lähetä viesti</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<?php
+ }
+}
 
 
 ?>
