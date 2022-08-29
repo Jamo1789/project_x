@@ -59,7 +59,7 @@
           <div class="content">
             <br><br>
             <h2></h2>
-            
+
             <br><br><br>
           </div>
         </div>
@@ -75,7 +75,7 @@
     <div>
      <div class="container">
        <div class="row">
-         <div class="card-body"><h2 style="text-align:center; font-size:35px;">Palvelut<h2><hr></div>
+         <div id="text_column" class="card-body"><h2 id="column_service" style="text-align:center; font-size:35px;">Palvelut<h2></div>
        </div>
     </div>
     </div>
@@ -94,24 +94,18 @@
 
           ?>
         <div class="col" style="">
-          <div class="card shadow-sm">
+          <div id="card_styles" class="card shadow-sm" style=""><a href="<?php the_permalink(); ?>">
             <div class="card-body">
-            <h3 style="text-align:center;"><?php echo get_the_title();?></h3>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="text-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-primary align-items-center">Lue lisää</button>
+            <h3 style="text-align:center; color:black;"><?php echo get_the_title();?></h3>
 
-                </div>
 
-              </div>
             </div>
             <?php the_post_thumbnail(); ?>
 
 
 
 
-          </div>
+        </a></div>
         </div>
         <!--while loop end -->
         <?php

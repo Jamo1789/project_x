@@ -72,20 +72,16 @@ function projext_files() {
 add_action('wp_enqueue_scripts', 'projext_files');
 
 //collect form variables and mail
-if(isset($_POST["submit"])){
-$username = $_POST["name"];
-$email = $_POST["email"];
-$subject = $_POST["subject"];
-$message = $_POST["message"];
-
-mail($email,$subject,$message);
-echo "<script>console.log('something hapened');</script>";
+add_action( 'admin_post_add_foobar', 'prefix_admin_add_foobar' );
+function prefix_admin_add_foobar() {
+    echo '<script>alert("Email sent successfully !")</script>';
 }
 //collect form variables and mail
 
 
 //Contact page
 function contactForm () {
+//require_once('wp-content/themes/project_x/email-script.php');
 if(get_the_ID() == 75){ ?>
 
 <div class="container" style="width: 100%;">
@@ -95,7 +91,7 @@ if(get_the_ID() == 75){ ?>
                 <div class="card-body">
                     <h5 class="card-title text-center">Ota Yhteyttä</h5>
                     <!-- TÄSSÄ KÄYNNISTETÄÄN EMAIL SKRIPTI -->
-                    <form action="email-script.php" method="post" class="form-signin">
+                    <form action="<?php echo "" . $_SERVER['HOST_NAME'] . "/wp-content/themes/project_x/email-script.php"; ?>" method="post" class="form-signin">
                         <!-- TÄSSÄ KÄYNNISTETÄÄN EMAIL SKRIPTI -->
                         <div class="form-label-group">
                             <label for="inputEmail">Sähköposti <span style="color: #FF0000">*</span></label>

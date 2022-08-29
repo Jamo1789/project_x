@@ -29,7 +29,7 @@ if (isset($_POST['sendMailBtn'])) {
 				</div>
 			</body>
 			</html>';
-    $result = @mail("jarmo.laakko@hotmail.com", $subject, $message, $headers);
+    $result = @mail($to, $subject, $message, $headers);
     //$result2 = @mail($const_mail, $subject, $message, $headers);
 
     echo '<script>alert("Email sent successfully !")</script>';

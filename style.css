@@ -1362,6 +1362,33 @@ ul.social-icons li {
 	z-index: 100;
 }
 
+#column_service{
+	background-color:white;
+	width: 15%;
+}
+#card_styles {
+	opacity: 1;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+	align-items: center;
+   }
+
+	 #card_styles:hover {
+	   opacity: 0.3;
+	 }
+
+	 #text_column{
+		background:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 7"><path d="M15 7c-3.926 0-5.902-1.581-7.813-3.11C5.33 2.405 3.574 1 0 1V0c3.925 0 5.901 1.581 7.812 3.11C9.67 4.595 11.425 6 15 6s5.33-1.404 7.188-2.89C24.098 1.58 26.074 0 30 0v1c-3.575 0-5.33 1.404-7.188 2.89C20.902 5.42 18.925 7 14.999 7z" fill="%23dcdcdc"/></svg>');
+		background-size: auto 0.7rem;
+		background-repeat: repeat-x;
+        background-position-y: calc(50% - 0.3rem);
+	 }
+
+	 #column_service{
+		
+	 }
+
 /* Header Titles ----------------------------- */
 
 .header-titles-wrapper {
