@@ -29,6 +29,7 @@ function register_my_menus() {
 	register_nav_menus( $locations );
 }
 
+
 //add featured image support
 
 add_theme_support( 'post-thumbnails' );
@@ -117,6 +118,10 @@ if(get_the_ID() == 75){ ?>
 <?php
  }
 }
+
+
+//Elements--------------------------------------------------------
+
 
 
 ?>

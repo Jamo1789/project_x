@@ -36,50 +36,78 @@
 			<div class="header-inner section-inner">
 
 				<div class="header-titles-wrapper">
-
-
-					<?php
-
-					// Check whether the header search is activated in the customizer.
-					$enable_header_search = get_theme_mod( 'enable_header_search', true );
-
-
-//this the place for theme search svg stuff
-
-
-   ?>
+					<?php $enable_header_search = get_theme_mod( 'enable_header_search', true ); //this the place for theme search svg stuff ?>
 
 					<div class="header-titles">
 						<a href="/">
 
 						<?php
-            if ( function_exists( 'the_custom_logo' ) ) {
-                    the_custom_logo();
-										//twentytwenty_site_description();
-                }
-							// Site title or logo.
-							//twentytwenty_site_logo();
+							if ( function_exists( 'the_custom_logo' ) ) {
+									the_custom_logo();
+														//twentytwenty_site_description();
+								}
+											// Site title or logo.
+											//twentytwenty_site_logo();
 
-							// Site description.
-							//twentytwenty_site_description();
-						?>
-						</a>
+											// Site description.
+											//twentytwenty_site_description();
+									?>
+						 </a>
+
+						 <div id="mySidenav" class="sidenav">
+						  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+
+
+									<nav class="menu-top"aria-label="<?php echo esc_attr_x( 'Horizontal', 'menu', 'twentytwenty' ); ?>">
+
+										<ul class="primary-menu reset-list-style">
+											<li style="color:white;">
+
+										<?php
+										$mobile_menu_location = 'mobile';
+
+
+										wp_nav_menu(
+											array(
+												'container'      => '',
+												'items_wrap'     => '%3$s',
+												'show_toggles'   => true,
+												'theme_location' => $mobile_menu_location,
+											)
+										);
+
+										?>
+									   </li>
+
+										</ul>
+
+									</nav><!-- .primary-menu-wrapper -->
+
+						 </div>
+
+						<script>
+								function openNav() {
+								  document.getElementById("mySidenav").style.width = "250px";
+								}
+
+								function closeNav() {
+								  document.getElementById("mySidenav").style.width = "0";
+								}
+							</script>
+
+
 					</div><!-- .header-titles --> <!-- site name -->
 
 					<button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal"  data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
 						<span class="toggle-inner">
 							<span class="toggle-icon">
-								<div class="togglebuttoni" onclick="funkkari()"><?php twentytwenty_the_theme_svg( 'ellipsis' ); ?></div>
-							</span>
-						<!--	<span class="toggle-text"><?php// _e( //'Menu', 'twentytwenty' ); ?></span> -->
+									<div class="togglebuttoni" onclick="openNav()"><?php twentytwenty_the_theme_svg( 'ellipsis' ); ?></div>
+								</span>
+							<span class="toggle-text"><?php _e( 'Menu', 'twentytwenty' ); ?></span>
 						</span>
 					</button><!-- .nav-toggle -->
 
-					<script>
-
-					const funkkari = () => {alert("sos")}
-
-					</script>
 
 				</div><!-- .header-titles-wrapper -->
 
@@ -96,12 +124,12 @@
 								<?php
 								if ( has_nav_menu( 'primary' ) ) {
 
-                  wp_nav_menu(
+                                     wp_nav_menu(
 										array(
 											'container'  => '',
 											'items_wrap' => '%3$s',
 											'theme_location' => 'primary',
-										)
+										       )
 									);
 
 								} elseif ( ! has_nav_menu( 'expanded' ) ) {
