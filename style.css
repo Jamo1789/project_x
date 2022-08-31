@@ -1369,23 +1369,25 @@ ul.social-icons li {
 	z-index: 1;
 	top: 0;
 	left: 0;
-	background-color: grey;
+	background-color: #f2f2f2;
 	overflow-x: hidden;
 	transition: 0.5s;
+	
 	padding-top: 60px;
+	
   }
   
   .sidenav a {
 	padding: 8px 8px 8px 32px;
 	text-decoration: none;
 	font-size: 25px;
-	color: #818181;
+	color: #333333;
 	display: block;
 	transition: 0.3s;
   }
   
   .sidenav a:hover {
-	color: #f1f1f1;
+	color: #990099;
   }
   
   .sidenav .closebtn {
@@ -1395,6 +1397,12 @@ ul.social-icons li {
 	font-size: 36px;
 	margin-left: 50px;
   }
+
+  #hero_button a:hover {
+	
+	color: black;
+  
+}
   
   @media screen and (max-height: 450px) {
 	.sidenav {padding-top: 15px;}
@@ -1961,6 +1969,8 @@ body.touch-enabled .primary-menu ul li.menu-item-has-children > a {
 	transition: opacity 0.25s ease-out;
 }
 
+
+
 .menu-modal-inner {
 	background: #fff;
 	display: flex;
@@ -1975,25 +1985,6 @@ body.touch-enabled .primary-menu ul li.menu-item-has-children > a {
 	flex-direction: column;
 	justify-content: space-between;
 	position: relative;
-}
-
-button.close-nav-toggle {
-	align-items: center;
-	display: flex;
-	font-size: 1.6rem;
-	font-weight: 500;
-	justify-content: flex-end;
-	padding: 3.1rem 0;
-	width: 100%;
-}
-
-button.close-nav-toggle svg {
-	height: 1.6rem;
-	width: 1.6rem;
-}
-
-button.close-nav-toggle .toggle-text {
-	margin-right: 1.6rem;
 }
 
 .menu-modal .menu-top {

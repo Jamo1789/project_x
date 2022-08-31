@@ -41,16 +41,16 @@
   <!--hero with button -->
 
   <section class="py-5 text-center container">
-    <div class="hero-image" style="height: 400px; background-image: url(<?php echo get_theme_file_uri('beach.png') ?>">
+    <div class="hero-image" style="height: 400px; background-image: url(<?php echo get_theme_file_uri('roofs.png') ?>">
       <div class="hero-text" style="text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;">
-        <h1 style="font-style: Georgia; color: #fff; font-size:50px;">Muutto tulossa?</h1>
+        <h1 style="font-style: Georgia; color: black; font-size:50px;">Muutto tulossa?</h1>
 
-        <button>Ota yhteyttä ja kysy tarjous</button>
+        <button id="hero_button">Ota yhteyttä ja kysy tarjous</button>
       </div>
 
 

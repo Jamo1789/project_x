@@ -61,8 +61,8 @@
 
 									<nav class="menu-top"aria-label="<?php echo esc_attr_x( 'Horizontal', 'menu', 'twentytwenty' ); ?>">
 
-										<ul class="primary-menu reset-list-style">
-											<li style="color:white;">
+										<ul class="primary-menu reset-list-style" style="margin-right: 25px;">
+											<li style="color:white;" style="">
 
 										<?php
 										$mobile_menu_location = 'mobile';
