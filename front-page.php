@@ -53,17 +53,7 @@
         <button>Ota yhteyttä ja kysy tarjous</button>
       </div>
 
-      <div id="popup1" class="overlay">
-        <div class="popup">
-          <a class="close" href="#">&times;</a>
-          <div class="content">
-            <br><br>
-            <h2></h2>
 
-            <br><br><br>
-          </div>
-        </div>
-      </div>
       <!--lightbox style popup goes here-->
     </div>
   </section>
@@ -72,13 +62,19 @@
 
 
 <!-- Services box-->
-    <div>
-     <div class="container">
-       <div class="row">
-         <div id="text_column" class="card-body"><h2 id="column_service" style="text-align:center; font-size:35px;">Palvelut<h2></div>
-       </div>
-    </div>
-    </div>
+
+      <div class="container">
+        <div class="row">
+          <div id="text_column" class="col-lg-12 col-md-12 col-sm-12 ml-auto">
+            <h2 id="column_service" class="mx-auto" style="text-align:center; font-size:35px;">Palvelut<h2>
+          </div>
+        </div>
+      </div>
+
+<style>
+
+
+</style>
 <!-- Services box end-->
 
 
