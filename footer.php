@@ -80,7 +80,7 @@
             <a href="#!" class="text-reset">Hinnasto</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Rekisteriseloste</a>
+            <a href="/rekisteriseloste" class="text-reset">Rekisteriseloste</a>
           </p>
           <p>
             <a href="#!" class="text-reset">Help</a>
