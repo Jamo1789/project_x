@@ -87,22 +87,170 @@ if(get_the_ID() == 75){ ?>
 
 <div class="container" style="width: 100%;">
     <div class="row">
-        <div class="col-sm-9 col-md-8 col-lg-8 mx-auto">
+        <div class="col-sm-9 col-md-8 col-lg-12 mx-auto">
             <div class="card card-signin my-5">
                 <div class="card-body">
-                    <h5 class="card-title text-center">Ota Yhteyttä</h5>
+                  <!--  <h5 class="card-title text-center">Jätä tarjouspyyntö</h5> -->
                     <!-- TÄSSÄ KÄYNNISTETÄÄN EMAIL SKRIPTI -->
                     <form action="<?php echo "" . $_SERVER['HOST_NAME'] . "/wp-content/themes/project_x/email-script.php"; ?>" method="post" class="form-signin">
                         <!-- TÄSSÄ KÄYNNISTETÄÄN EMAIL SKRIPTI -->
-                        <div class="form-label-group">
-                            <label for="inputEmail">Sähköposti <span style="color: #FF0000">*</span></label>
-                            <input type="text" name="fromEmail" id="fromEmail" class="form-control"  value="" required>
-                        </div> <br/>
-                   
-                        <label for="inputPassword">Aihe <span style="color: #FF0000">*</span></label>
-                        <div class="form-label-group">
-                            <input type="text" id="subject" name="subject" class="form-control" placeholder="Aihe" required>
-                        </div><br/>
+
+												<!-- sähköposti ja puh -->
+												<div class="row">
+														  <div class="col">
+																<label for="inputPassword">Email <span style="color: #FF0000">*</span></label>
+														    <input type="text" class="form-control" placeholder="email" aria-label="First name">
+														  </div>
+														  <div class="col">
+																<label for="inputPassword">Puh. <span style="color: #FF0000">*</span></label>
+														    <input type="text" class="form-control" placeholder="puhelinnumero" aria-label="Last name">
+														  </div>
+												</div>
+												<br/>
+													<!-- sähköposti ja puh end-->
+
+													<!-- Talotyyppi-->
+
+
+
+														<br/>
+
+													<!-- Talotyyppi end-->
+
+															<!-- Muuttosijainti-->
+
+
+													<div class="row">
+														<h4 class="card-title text-center">Muutettava kohde</h4>
+															  <div class="col">
+																	<label for="inputPassword">Osoite <span style="color: #FF0000">*</span></label>
+															    <input type="text" class="form-control" placeholder="Osoite, kaupunki" aria-label="First name">
+															  </div>
+																<div class="col">
+																	<label for="inputPassword">Neliömäärä <span style="color: #FF0000">*</span></label>
+																	<input class="form-control" type="number" id="quantity" name="quantity" min="1" max="500">
+																</div>
+
+
+													</div>
+													<br/>
+
+
+
+															<!-- Muuttosjainti end-->
+															<div class="d-flex align-items-center flex-column">
+
+
+																			<label for="inputPassword">Talotyyppi <span style="color: #FF0000">*</span></label>
+																			<select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="cars" name="cars">
+																				<option value="Kerrostalo">Kerrostalo</option>
+																				<option value="Rivitalo">Rivitalo</option>
+																				<option value="Luhtitalo">Luhtitalo</option>
+																				<option value="Omakotitalo">Omakotitalo</option>
+																		 </select>
+
+																			<label for="inputPassword">Onko hissi? <span style="color: #FF0000">*</span></label>
+																			<select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="cars" name="cars">
+																				<option value="Kyllä">Kyllä</option>
+																				<option value="Ei">Ei</option>
+																		 </select>
+
+																		 <label for="inputPassword">Onko varasto? <span style="color: #FF0000">*</span></label>
+																		 <select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="cars" name="cars">
+																			 <option value="Kyllä">Kyllä</option>
+																			 <option value="Ei">Ei</option>
+																		</select>
+
+																		<label for="inputPassword">Onko omia kantajia? <span style="color: #FF0000">*</span></label>
+																		<select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="cars" name="cars">
+																			<option value="Kyllä">Kyllä</option>
+																			<option value="Ei">Ei</option>
+																	 </select>
+																	 <br>
+																	 <br>
+
+
+
+														</div>
+
+																<!-- Speksit-->
+
+
+
+
+																		<!-- Talotyyppi-->
+
+																		<div class="row">
+																			<h4 class="card-title text-center">Määränpää</h4>
+																					<div class="col">
+																						<label for="inputPassword">Osoite <span style="color: #FF0000">*</span></label>
+																						<input type="text" class="form-control" placeholder="Osoite, kaupunki" aria-label="First name">
+																					</div>
+
+
+
+																		</div>
+																		<br/>
+
+
+
+																				<!-- Muuttosjainti end-->
+																				<div class="d-flex align-items-center flex-column">
+
+
+																								<label for="inputPassword">Talotyyppi <span style="color: #FF0000">*</span></label>
+																								<select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="cars" name="cars">
+																									<option value="Kerrostalo">Kerrostalo</option>
+																									<option value="Rivitalo">Rivitalo</option>
+																									<option value="Luhtitalo">Luhtitalo</option>
+																									<option value="Omakotitalo">Omakotitalo</option>
+																							 </select>
+
+																								<label for="inputPassword">Onko hissi? <span style="color: #FF0000">*</span></label>
+																								<select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="cars" name="cars">
+																									<option value="Kyllä">Kyllä</option>
+																									<option value="Ei">Ei</option>
+																							 </select>
+
+																							 <label for="inputPassword">Onko varasto? <span style="color: #FF0000">*</span></label>
+																							 <select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="cars" name="cars">
+																								 <option value="Kyllä">Kyllä</option>
+																								 <option value="Ei">Ei</option>
+																							</select>
+
+																							<label for="inputPassword">Onko omia kantajia? <span style="color: #FF0000">*</span></label>
+																							<select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="cars" name="cars">
+																								<option value="Kyllä">Kyllä</option>
+																								<option value="Ei">Ei</option>
+																						 </select>
+																						 <br>
+																						 <br>
+
+
+
+																			</div>
+
+
+
+																			<div class="d-flex align-items-center flex-column">
+																				<h4 class="card-title text-center">Muuta</h4>
+
+
+																							<label for="inputPassword">Maksutapa <span style="color: #FF0000">*</span></label>
+																							<select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="cars" name="cars">
+																								<option value="Kerrostalo">Käteinen</option>
+																								<option value="Rivitalo">Kortti</option>
+																								<option value="Luhtitalo">Lasku</option>
+
+																						 </select>
+
+
+
+
+																		</div>
+
+
+
                         <label for="inputPassword">Viesti <span style="color: #FF0000">*</span></label>
                         <div class="form-label-group">
                             <textarea  id="message" name="message" class="form-control" placeholder="Viesti" required ></textarea>
