@@ -119,7 +119,7 @@ if(get_the_ID() == 75){ ?>
 
 
 													<div class="row">
-														<h4 class="card-title text-center">Muutettava kohde</h4>
+														<h4 class="card-title text-left">Muutettava kohde</h4>
 															  <div class="col">
 																	<label for="inputPassword">Osoite <span style="color: #FF0000">*</span></label>
 															    <input type="text" class="form-control" placeholder="Osoite, kaupunki" aria-label="First name">
@@ -137,8 +137,9 @@ if(get_the_ID() == 75){ ?>
 
 															<!-- Muuttosjainti end-->
 															<div class="d-flex align-items-center flex-column">
-																<label for="inputPassword">Monesko kerros? <span style="color: #FF0000">*</span></label>
+																<label  for="inputPassword">Monesko kerros? <span style="color: #FF0000">*</span></label>
 																<input class="form-select" type="number" id="quantity" name="quantity" min="1" max="500">
+																
 
 
 																			<label for="inputPassword">Talotyyppi <span style="color: #FF0000">*</span></label>
@@ -188,7 +189,7 @@ if(get_the_ID() == 75){ ?>
 																		<!-- Määränpää-->
 
 																		<div class="row">
-																			<h4 class="card-title text-center">Määränpää</h4>
+																			<h4 class="card-title text-left">Määränpää</h4>
 																					<div class="col">
 																						<label for="inputPassword">Osoite <span style="color: #FF0000">*</span></label>
 																						<input type="text" class="form-control" placeholder="Osoite, kaupunki" aria-label="First name">
