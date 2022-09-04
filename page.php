@@ -16,7 +16,7 @@ get_header();
 
       <div id="popup1" class="overlay">
         <div class="popup">
-          <a class="close" href="#">&times;</a>
+          <a class="close" href="#"></a>
           <div class="content">
             <br><br>
             <h2></h2>
