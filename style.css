@@ -15,6 +15,7 @@ Tags: custom-background
 
 html,
 body {
+	background-color: #ffbf00 !important;
 	border: none;
 	margin: 0;
 	padding: 0;
@@ -1402,13 +1403,13 @@ ul.social-icons li {
 
   @media screen and (max-width: 700px) {
 	#column_service{
-		background-color:white;
+		background-color:#FFBF00;
 		width: 35%;
 	}
   }
 
 #column_service{
-	background-color:white;
+	background-color:#FFBF00;
 	width: 35%;
 }
 #card_styles {
@@ -2455,6 +2456,8 @@ body.template-full-width [class*="wp-block"].alignfull:not(.has-background) [cla
 }
 
 
+
+
 /* -------------------------------------------------------------------------- */
 
 /*	8. Post: Archive
@@ -2556,6 +2559,8 @@ h2.entry-title {
 .intro-text {
 	margin-top: 2rem;
 }
+
+
 
 .singular .intro-text {
 	font-size: 2rem;

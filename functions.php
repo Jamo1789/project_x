@@ -85,7 +85,7 @@ function contactForm () {
 //require_once('wp-content/themes/project_x/email-script.php');
 if(get_the_ID() == 75){ ?>
 
-<div class="container" style="width: 100%;">
+<div class="container bg-dark" style="width: 100%;">
     <div class="row">
         <div class="col-sm-9 col-md-8 col-lg-12 mx-auto">
             <div class="card card-signin my-5">
@@ -139,7 +139,7 @@ if(get_the_ID() == 75){ ?>
 															<div class="d-flex align-items-center flex-column">
 																<label  for="inputPassword">Monesko kerros? <span style="color: #FF0000">*</span></label>
 																<input class="form-select" type="number" id="quantity" name="quantity" min="1" max="500">
-																
+
 
 
 																			<label for="inputPassword">Talotyyppi <span style="color: #FF0000">*</span></label>
@@ -264,7 +264,7 @@ if(get_the_ID() == 75){ ?>
                         <div class="form-label-group">
                             <textarea  id="message" name="message" class="form-control" placeholder="Viesti" required ></textarea>
                         </div> <br/>
-                        <button type="submit" name="sendMailBtn" class="btn btn-lg btn-primary btn-block text-uppercase" >Jätä tarjous</button>
+                        <button type="submit" name="sendMailBtn" class="btn btn-lg btn-primary btn-block text-uppercase" style="background-color: green;" >Lähetä</button>
                     </form>
                 </div>
             </div>

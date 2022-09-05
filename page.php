@@ -14,29 +14,19 @@ get_header();
 
       </div>
 
-      <div id="popup1" class="overlay">
-        <div class="popup">
-          <a class="close" href="#"></a>
-          <div class="content">
-            <br><br>
-            <h2></h2>
 
-            <br><br><br>
-          </div>
-        </div>
-      </div>
       <!--lightbox style popup goes here-->
     </div>
   </section>
 
   <!-- Page content start-->
 
-  <div class="album py-5 bg-light">
+  <div class="album py-5 bg-dark">
     <div class="container">
 
 
 
-        <div class="col" style="">
+        <div id="pagecontainer" class="col p-3 mb-2 bg-dark text-white" style="font-size: 15px;">
         <?php the_content(); ?>
 
         </div>

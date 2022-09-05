@@ -34,7 +34,7 @@
 		wp_body_open();
 		?>
 
-		<header id="site-header" class="header-footer-group">
+		<header id="site-header" class="header-footer-group" style="background-color: #FFBF00;">
 
 			<div class="header-inner section-inner">
 

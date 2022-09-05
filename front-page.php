@@ -69,7 +69,7 @@
 <!-- Services box end-->
 
 
-  <div class="album py-5 bg-light">
+  <div class="album py-5 bg-dark">
     <div class="container">
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -80,7 +80,7 @@
           the_post();
 
           ?>
-        <div class="col" style="">
+        <div class="col bg-dark" style="">
           <div id="card_styles" class="card shadow-sm" style=""><a href="<?php the_permalink(); ?>">
             <div class="card-body">
             <h3 style="text-align:center; color:black;"><?php echo get_the_title();?></h3>
