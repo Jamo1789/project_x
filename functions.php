@@ -99,11 +99,11 @@ if(get_the_ID() == 75){ ?>
 												<div class="row">
 														  <div class="col">
 																<label for="inputPassword">Email <span style="color: #FF0000">*</span></label>
-														    <input type="text" class="form-control" placeholder="email" aria-label="First name">
+														    <input type="text" class="form-control" placeholder="email" aria-label="fromEmail" name="fromEmail" required>
 														  </div>
 														  <div class="col">
 																<label for="inputPassword">Puh. <span style="color: #FF0000">*</span></label>
-														    <input type="text" class="form-control" placeholder="puhelinnumero" aria-label="Last name">
+														    <input type="text" class="form-control" placeholder="puh" aria-label="Last name" name="puh" required>
 														  </div>
 												</div>
 												<br/>
@@ -122,11 +122,11 @@ if(get_the_ID() == 75){ ?>
 														<h4 class="card-title text-left">Muutettava kohde</h4>
 															  <div class="col">
 																	<label for="inputPassword">Osoite <span style="color: #FF0000">*</span></label>
-															    <input type="text" class="form-control" placeholder="Osoite, kaupunki" aria-label="First name">
+															    <input type="text" class="form-control" placeholder="Osoite, kaupunki" aria-label="First name" name="K_osoite" required>
 															  </div>
 																<div class="col">
 																	<label for="inputPassword">Neliömäärä <span style="color: #FF0000">*</span></label>
-																	<input class="form-control" type="number" id="quantity" name="quantity" min="1" max="500">
+																	<input class="form-control" type="number" id="quantity" name="K_neliomaara" min="1" max="500" required>
 																</div>
 
 
@@ -138,12 +138,13 @@ if(get_the_ID() == 75){ ?>
 															<!-- Muuttosjainti end-->
 															<div class="d-flex align-items-center flex-column">
 																<label  for="inputPassword">Monesko kerros? <span style="color: #FF0000">*</span></label>
-																<input class="form-select" type="number" id="quantity" name="quantity" min="1" max="500">
+																<input class="form-select" type="number" id="quantity" min="1" max="500" name="K_kerros" required>
 
 
 
 																			<label for="inputPassword">Talotyyppi <span style="color: #FF0000">*</span></label>
-																			<select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="cars" name="cars">
+																			<select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="K_talotyyppi" name="K_talotyyppi" required>
+																				<option value="Kerrostalo">ei valintaa</option>
 																				<option value="Kerrostalo">Kerrostalo</option>
 																				<option value="Rivitalo">Rivitalo</option>
 																				<option value="Luhtitalo">Luhtitalo</option>
@@ -158,19 +159,22 @@ if(get_the_ID() == 75){ ?>
 
 
 																			<label for="inputPassword">Onko hissi? <span style="color: #FF0000">*</span></label>
-																			<select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="cars" name="cars">
+																			<select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="K_hissi" name="K_hissi" required>
+																				<option value="Ei valintaa">Ei valintaa</option>
 																				<option value="Kyllä">Kyllä</option>
 																				<option value="Ei">Ei</option>
 																		 </select>
 
 																		 <label for="inputPassword">Onko varasto? <span style="color: #FF0000">*</span></label>
-																		 <select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="cars" name="cars">
+																		 <select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="K_varasto" name="K_varasto" required>
+																			 <option value="Kyllä">Ei valintaa</option>
 																			 <option value="Kyllä">Kyllä</option>
 																			 <option value="Ei">Ei</option>
 																		</select>
 
 																		<label for="inputPassword">Onko omia kantajia? <span style="color: #FF0000">*</span></label>
-																		<select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="cars" name="cars">
+																		<select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="cars" name="K_kantaja" required>
+																			<option value="Kyllä">Ei valintaa</option>
 																			<option value="Kyllä">Kyllä</option>
 																			<option value="Ei">Ei</option>
 																	 </select>
@@ -192,7 +196,7 @@ if(get_the_ID() == 75){ ?>
 																			<h4 class="card-title text-left">Määränpää</h4>
 																					<div class="col">
 																						<label for="inputPassword">Osoite <span style="color: #FF0000">*</span></label>
-																						<input type="text" class="form-control" placeholder="Osoite, kaupunki" aria-label="First name">
+																						<input type="text" class="form-control" placeholder="Osoite, kaupunki" aria-label="First name" name="M_osoite" required>
 																					</div>
 
 
@@ -206,11 +210,12 @@ if(get_the_ID() == 75){ ?>
 																				<div class="d-flex align-items-center flex-column">
 
 																					<label for="inputPassword">Monesko kerros? <span style="color: #FF0000">*</span></label>
-																					<input class="form-select" type="number" id="quantity" name="quantity" min="1" max="500">
+																					<input class="form-select" type="number" id="quantity" name="M_Kerros" min="1" max="500" required>
 
 
 																								<label for="inputPassword">Talotyyppi <span style="color: #FF0000">*</span></label>
-																								<select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="Talotyyppi" name="M_Talotyyppi">
+																								<select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="M_talotyyppi" name="M_Talotyyppi" required>
+																									<option value="Kerrostalo">Ei valintaa</option>
 																									<option value="Kerrostalo">Kerrostalo</option>
 																									<option value="Rivitalo">Rivitalo</option>
 																									<option value="Luhtitalo">Luhtitalo</option>
@@ -218,13 +223,14 @@ if(get_the_ID() == 75){ ?>
 																							 </select>
 
 																								<label for="inputPassword">Onko hissi? <span style="color: #FF0000">*</span></label>
-																								<select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="Hissi" name="M_Hissi">
+																								<select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="M_hissi" name="M_Hissi" required>
 																									<option value="Kyllä">Kyllä</option>
 																									<option value="Ei">Ei</option>
 																							 </select>
 
 																							 <label for="inputPassword">Onko varasto? <span style="color: #FF0000">*</span></label>
-																							 <select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="Onko_varasto" name="M_Onko_varasto">
+																							 <select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="M_varasto" name="M_varasto" required>
+																								 <option value="Kyllä">Ei valintaa</option>
 																								 <option value="Kyllä">Kyllä</option>
 																								 <option value="Ei">Ei</option>
 																							</select>
@@ -244,7 +250,8 @@ if(get_the_ID() == 75){ ?>
 
 
 																							<label for="inputPassword">Maksutapa <span style="color: #FF0000">*</span></label>
-																							<select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="cars" name="maksutapa">
+																							<select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="maksutapa" name="maksutapa" required>
+																								<option value="Kerrostalo">Ei valintaa</option>
 																								<option value="Kerrostalo">Käteinen</option>
 																								<option value="Rivitalo">Kortti</option>
 																								<option value="Luhtitalo">Lasku</option>
@@ -262,11 +269,11 @@ if(get_the_ID() == 75){ ?>
 
                         <label for="inputPassword">Viesti <span style="color: #FF0000"></span></label>
                         <div class="form-label-group">
-                            <textarea  id="message" name="message" class="form-control" placeholder="Viesti" required ></textarea>
+                            <textarea  id="message" name="message" class="form-control" placeholder="Viesti"></textarea>
                         </div> <br/>
 												<div class="col-auto">
 													 <div class="form-check mb-2">
-														 <input class="form-check-input" type="checkbox" id="autoSizingCheck" name="accept_terms">
+														 <input class="form-check-input" type="checkbox" id="autoSizingCheck" name="accept_terms" required>
 														 <label class="form-check-label" for="autoSizingCheck">
 															 Hyväksyn henkilötietojeni käsittelyn <a href="/rekisteriseloste" target="_blank">tietosuojaselosteen</a> määrittelemällä tavalla
 														 </label>
