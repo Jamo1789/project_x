@@ -264,6 +264,14 @@ if(get_the_ID() == 75){ ?>
                         <div class="form-label-group">
                             <textarea  id="message" name="message" class="form-control" placeholder="Viesti" required ></textarea>
                         </div> <br/>
+												<div class="col-auto">
+													 <div class="form-check mb-2">
+														 <input class="form-check-input" type="checkbox" id="autoSizingCheck" name="accept_terms">
+														 <label class="form-check-label" for="autoSizingCheck">
+															 Hyväksyn henkilötietojeni käsittelyn <a href="/rekisteriseloste" target="_blank">tietosuojaselosteen</a> määrittelemällä tavalla
+														 </label>
+													 </div>
+											 </div>
                         <button type="submit" name="sendMailBtn" class="btn btn-lg btn-primary btn-block text-uppercase" style="background-color: green;" >Lähetä</button>
                     </form>
                 </div>
