@@ -832,7 +832,7 @@ input[type="reset"],
 input[type="submit"] {
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	background: #cd2653;
+	background: green;
 	border: none;
 	border-radius: 0;
 	color: #fff;
@@ -867,7 +867,7 @@ input[type="reset"]:focus,
 input[type="reset"]:hover,
 input[type="submit"]:focus,
 input[type="submit"]:hover {
-	background-color: orange;
+	background-color: black;
 }
 
 input[type="text"]:focus,
@@ -1384,7 +1384,7 @@ ul.social-icons li {
   }
   
   .sidenav a:hover {
-	color: #990099;
+	color: black;
   }
   
   .sidenav .closebtn {
@@ -1428,6 +1428,7 @@ ul.social-icons li {
 		width:140px;
 		height:60px;
 		border-radius: 40px !important;
+		
 		
 	}
 
