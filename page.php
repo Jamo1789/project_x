@@ -2,7 +2,7 @@
 get_header();
 ?>
  <section class="py-5 text-center container">
-    <div class="hero-image" style="height: 100px; background-image: url(<?php echo get_theme_file_uri('roofs.png') ?>">
+    <div class="hero-image" style="height: 100px; background-image: url(<?php echo get_theme_file_uri('truck.jpg') ?>">
       <div class="hero-text" style="text-align: center;
   position: absolute;
   top: 50%;

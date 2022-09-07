@@ -42,9 +42,9 @@
         <!-- Grid column -->
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4">
+          <h4 class="text-uppercase fw-bold mb-4">
             <i class="fas fa-gem me-3"></i>Omamuutto22
-          </h6>
+          </h4>
           <p>
             
           </p>
@@ -54,9 +54,9 @@
         <!-- Grid column -->
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
+          <h4 class="text-uppercase fw-bold mb-4">
             Palvelut
-          </h6>
+          </h4>
           <p>
             <a href="#!" class="text-reset">Muutto</a>
           </p>
@@ -73,32 +73,30 @@
         <!-- Grid column -->
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
+          <h4 class="text-uppercase fw-bold mb-4">
             Hyödylliset linkit
-          </h6>
+          </h4>
           <p>
-            <a href="#!" class="text-reset">Hinnasto</a>
+            <a href="/hinnasto" class="text-reset">Hinnasto</a>
           </p>
           <p>
             <a href="/rekisteriseloste" class="text-reset">Rekisteriseloste</a>
           </p>
-          <p>
-            <a href="#!" class="text-reset">Help</a>
-          </p>
+          
         </div>
         <!-- Grid column -->
 
         <!-- Grid column -->
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
           <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">Yhteys</h6>
-          <p><i class="fas fa-home me-3"></i> xxxxxxxxxxxxxx</p>
+          <h4 class="text-uppercase fw-bold mb-4">Yhteys</h4>
+          <p><i class="fas fa-home me-3"></i> 0403659978 </p>
           <p>
             <i class="fas fa-envelope me-3"></i>
-            info@example.com
+            omamuutto22@gmail.com
           </p>
-          <p><i class="fas fa-phone me-3"></i>xxxxxxxxxxxx</p>
-          <p><i class="fas fa-print me-3"></i> xxxxxxxxxx</p>
+          <p><i class="fas fa-phone me-3"></i>Osoite?</p>
+          
           <p class="float-end mb-1">
       <a href="#">Takaisin ylös</a>
     </p>

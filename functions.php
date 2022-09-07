@@ -143,7 +143,7 @@ if(get_the_ID() == 75){ ?>
 
 
 																			<label for="inputPassword">Talotyyppi <span style="color: #FF0000">*</span></label>
-																			<select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="K_talotyyppi" name="K_talotyyppi" required>
+																			<select class="form-select form-select-lg mb-3" style="margin-right: auto; height: 47px;" id="K_talotyyppi" name="K_talotyyppi" required>
 																				<option value="Kerrostalo">ei valintaa</option>
 																				<option value="Kerrostalo">Kerrostalo</option>
 																				<option value="Rivitalo">Rivitalo</option>
@@ -159,21 +159,21 @@ if(get_the_ID() == 75){ ?>
 
 
 																			<label for="inputPassword">Onko hissi? <span style="color: #FF0000">*</span></label>
-																			<select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="K_hissi" name="K_hissi" required>
+																			<select class="form-select form-select-lg mb-3" style="margin-right: auto; height: 47px;" id="K_hissi" name="K_hissi" required>
 																				<option value="Ei valintaa">Ei valintaa</option>
 																				<option value="Kyllä">Kyllä</option>
 																				<option value="Ei">Ei</option>
 																		 </select>
 
 																		 <label for="inputPassword">Onko varasto? <span style="color: #FF0000">*</span></label>
-																		 <select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="K_varasto" name="K_varasto" required>
+																		 <select class="form-select form-select-lg mb-3" style="margin-right: auto; height: 47px;" id="K_varasto" name="K_varasto" required>
 																			 <option value="Kyllä">Ei valintaa</option>
 																			 <option value="Kyllä">Kyllä</option>
 																			 <option value="Ei">Ei</option>
 																		</select>
 
 																		<label for="inputPassword">Onko omia kantajia? <span style="color: #FF0000">*</span></label>
-																		<select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="cars" name="K_kantaja" required>
+																		<select class="form-select form-select-lg mb-3" style="margin-right: auto; height: 47px;" id="cars" name="K_kantaja" required>
 																			<option value="Kyllä">Ei valintaa</option>
 																			<option value="Kyllä">Kyllä</option>
 																			<option value="Ei">Ei</option>
@@ -214,7 +214,7 @@ if(get_the_ID() == 75){ ?>
 
 
 																								<label for="inputPassword">Talotyyppi <span style="color: #FF0000">*</span></label>
-																								<select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="M_talotyyppi" name="M_Talotyyppi" required>
+																								<select class="form-select form-select-lg mb-3" style="margin-right: auto; height: 47px;;" id="M_talotyyppi" name="M_Talotyyppi" required>
 																									<option value="Kerrostalo">Ei valintaa</option>
 																									<option value="Kerrostalo">Kerrostalo</option>
 																									<option value="Rivitalo">Rivitalo</option>
@@ -223,13 +223,13 @@ if(get_the_ID() == 75){ ?>
 																							 </select>
 
 																								<label for="inputPassword">Onko hissi? <span style="color: #FF0000">*</span></label>
-																								<select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="M_hissi" name="M_Hissi" required>
+																								<select class="form-select form-select-lg mb-3" style="margin-right: auto; height: 47px;;" id="M_hissi" name="M_Hissi" required>
 																									<option value="Kyllä">Kyllä</option>
 																									<option value="Ei">Ei</option>
 																							 </select>
 
 																							 <label for="inputPassword">Onko varasto? <span style="color: #FF0000">*</span></label>
-																							 <select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="M_varasto" name="M_varasto" required>
+																							 <select class="form-select form-select-lg mb-3" style="margin-right: auto; height: 47px;" id="M_varasto" name="M_varasto" required>
 																								 <option value="Kyllä">Ei valintaa</option>
 																								 <option value="Kyllä">Kyllä</option>
 																								 <option value="Ei">Ei</option>
@@ -250,7 +250,7 @@ if(get_the_ID() == 75){ ?>
 
 
 																							<label for="inputPassword">Maksutapa <span style="color: #FF0000">*</span></label>
-																							<select class="form-select" style="width: 40%; margin-right: 20px; height: 47px;" id="maksutapa" name="maksutapa" required>
+																							<select class="form-select form-select-lg mb-3" style="margin-right: auto; height: 47px;" id="maksutapa" name="maksutapa" required>
 																								<option value="Kerrostalo">Ei valintaa</option>
 																								<option value="Kerrostalo">Käteinen</option>
 																								<option value="Rivitalo">Kortti</option>

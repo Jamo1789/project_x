@@ -32,16 +32,17 @@
   <!--hero with button -->
 
   <section class="py-5 text-center container">
-    <div class="hero-image" style="height: 400px; background-image: url(<?php echo get_theme_file_uri('roofs.png') ?>">
+    <div class="hero-image" style="height: 400px; background-image: url(<?php echo get_theme_file_uri('truck.jpg') ?>">
       <div class="hero-text" style="text-align: center;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;">
+ ">
         <h1 style="font-style: Georgia; color: black; font-size:50px;">Muutto tulossa?</h1>
 
-        <a href="/ota-yhteytta"><button style="font-size: 15px;"  id="hero_button">Kysy tarjous</button></a>
+        <a href="/ota-yhteytta"><button style="font-size: 15px;"  id="hero_button">Kysy tarjous</button></a><br>
+        <h2 style="font-style: Georgia; color: black; margin-top:10px!important;">Tai soita 0403659978</h2>
       </div>
 
 
@@ -81,7 +82,7 @@
 
           ?>
         <div class="col bg-dark" style="">
-          <div id="card_styles" class="card shadow-sm" style=""><a href="<?php the_permalink(); ?>">
+          <div id="card_styles" class="card shadow-sm" style="">
             <div class="card-body">
             <h3 style="text-align:center; color:black;"><?php echo get_the_title();?></h3>
 
