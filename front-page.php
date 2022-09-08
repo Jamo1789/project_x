@@ -32,17 +32,17 @@
   <!--hero with button -->
 
   <section class="py-5 text-center container">
-    <div class="hero-image" style="height: 400px; background-image: url(<?php echo get_theme_file_uri('truck.jpg') ?>">
+    <div class="hero-image" style="height: 400px; background-image: url(<?php echo get_theme_file_uri('roofs2.png') ?>">
       <div class="hero-text" style="text-align: center;
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
  ">
-        <h1 style="font-style: Georgia; color: black; font-size:50px;">Muutto tulossa?</h1>
+        <h1 style="font-style: Georgia; color: white; font-size:50px;">Muutto tulossa?</h1>
 
         <a href="/ota-yhteytta"><button style="font-size: 15px;"  id="hero_button">Kysy tarjous</button></a><br>
-        <h2 style="font-style: Georgia; color: black; margin-top:10px!important;">Tai soita 0403659978</h2>
+        <h2 style="font-style: Georgia; color: white; margin-top:10px!important;">Tai soita 0403659978</h2>
       </div>
 
 

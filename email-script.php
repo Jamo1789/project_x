@@ -13,8 +13,8 @@ if (isset($_POST['sendMailBtn'])) {
 
 	$M_osoite = $_POST['M_osoite'];
   $M_Kerros = $_POST['M_Kerros'];
-	$M_talotyyppi = $_POST['M_talotyyppi'];
-	$M_hissi = $_POST['M_hissi'];
+	$M_Talotyyppi = $_POST['M_talotyyppi'];
+	$M_hissi = $_POST['M_Hissi'];
 	$M_varasto = $_POST['M_varasto'];
     //$const_mail = 'jarmo.laakko@hotmail.com'
 
@@ -43,7 +43,7 @@ if (isset($_POST['sendMailBtn'])) {
         <p>Onko varasto?> '.$K_varasto.' </p><br/>
         <p>Onko kantajia?> '.$K_kantaja.'</p><br/>
         <p>Osoite: '.$M_osoite.' </p><br/>
-        <p>Talotyyppi määränpää:>'.$M_talotyyppi.'</p><br/>
+        <p>Talotyyppi määränpää:>'.$M_Talotyyppi.'</p><br/>
         <p>Onko hissiä määränpäässä?> '.$M_hissi.'</p><br/>
         <p>Onko varasto määränpäässä?> '.$M_varasto.'</p><br/>
 				</div>
