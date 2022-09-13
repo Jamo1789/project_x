@@ -95,7 +95,7 @@
             <i class="fas fa-envelope me-3"></i>
             omamuutto22@gmail.com
           </p>
-          <p><i class="fas fa-phone me-3"></i>Osoite?</p>
+          <!--<p><i class="fas fa-phone me-3"></i>Osoite?</p>-->
           
           <p class="float-end mb-1">
       <a href="#">Takaisin ylös</a>

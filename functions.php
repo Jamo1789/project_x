@@ -95,6 +95,21 @@ if(get_the_ID() == 75){ ?>
                     <form action="<?php echo "" . $_SERVER['HOST_NAME'] . "/wp-content/themes/project_x/email-script.php"; ?>" method="post" class="form-signin">
                         <!-- TÄSSÄ KÄYNNISTETÄÄN EMAIL SKRIPTI -->
 
+												<div class="row">
+															<div class="col">
+																<label for="inputPassword">Etunimi <span style="color: #FF0000">*</span></label>
+																<input type="text" class="form-control" placeholder="Etunimi" aria-label="fromEmail" name="etunimi" required>
+															</div>
+															<div class="col">
+																<label for="inputPassword">Sukunimi <span style="color: #FF0000">*</span></label>
+																<input type="text" class="form-control" placeholder="Sukunimi" aria-label="Last name" name="sukunimi" required>
+															</div>
+												</div>
+
+
+
+
+
 												<!-- sähköposti ja puh -->
 												<div class="row">
 														  <div class="col">

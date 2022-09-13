@@ -32,7 +32,8 @@
   <!--hero with button -->
 
   <section class="py-5 text-center container">
-    <div class="hero-image" style="height: 400px; background-image: url(<?php echo get_theme_file_uri('roofs2.png') ?>">
+    <div alt="Jeffrey Czum" class="hero-image" style="height: 400px; background-image: url(<?php echo get_theme_file_uri('roofs2.png') ?>">
+    <p class="img__description">Jeffrey Czum</p>
       <div class="hero-text" style="text-align: center;
   position: absolute;
   top: 40%;
@@ -43,6 +44,7 @@
 
         <a href="/ota-yhteytta"><button style="font-size: 15px;"  id="hero_button">Kysy tarjous</button></a><br>
         <h2 style="font-style: Georgia; color: white; margin-top:10px!important;">Tai soita 0403659978</h2>
+        
       </div>
 
 

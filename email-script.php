@@ -1,5 +1,7 @@
 <?php
 if (isset($_POST['sendMailBtn'])) {
+  $firstName = $_POST['etunimi'];
+  $lastName = $_POST['sukunimi'];
   $fromEmail = $_POST['fromEmail'];
   $toEmail = "jarmo.laakko@hotmail.com";
 	$puh = $_POST['puh'];
@@ -36,6 +38,7 @@ if (isset($_POST['sendMailBtn'])) {
 			<span class="preheader" style="color: transparent; display: none; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: hidden; width: 0;">'.$message.'</span>
 				<div class="container">
         <h2>Uusi tarjouspyyntö</h2>
+        <p>Nimi:> '.$firstName.' '.$lastName.' </p><br/>
         <p>Osoite:> '.$K_osoite.' </p><br/>
         <p>Neliömäärä:> '.$K_neliomaara.' </p><br/>
         <p>Talotyyppi: '.$K_talotyyppi.' </p><br/>
