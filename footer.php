@@ -57,14 +57,14 @@
           <h4 class="text-uppercase fw-bold mb-4">
             Palvelut
           </h4>
-          <p>
-            <a href="#!" class="text-reset">Muutto</a>
+          <p
+           class="text-reset">Muuttopalvelu</p>
+          
+          <p
+              class="text-reset">Muuttolaatikot</p>
           </p>
-          <p>
-            <a href="#!" class="text-reset">Muuttolaatikot</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Siivouspalvelut</a>
+          <p
+             class="text-reset">Siivouspalvelut</p>
           </p>
          
         </div>

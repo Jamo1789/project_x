@@ -118,7 +118,7 @@ if(get_the_ID() == 75){ ?>
 														  </div>
 														  <div class="col">
 																<label for="inputPassword">Puh. <span style="color: #FF0000">*</span></label>
-														    <input type="text" class="form-control" placeholder="puh" aria-label="Last name" name="puh" required>
+														    <input id="email_place" type="text" class="form-control" placeholder="puh" aria-label="Last name" name="puh" required>
 														  </div>
 												</div>
 												<br/>
@@ -294,8 +294,11 @@ if(get_the_ID() == 75){ ?>
 														 </label>
 													 </div>
 											 </div>
-                        <button type="submit" name="sendMailBtn" class="btn btn-lg btn-primary btn-block text-uppercase" style="background-color: green;" >Lähetä</button>
+                        <button type="submit" name="sendMailBtn" class="btn btn-lg btn-primary btn-block text-uppercase" style="background-color: green;">Lähetä</button>
                     </form>
+					
+
+					
                 </div>
             </div>
         </div>

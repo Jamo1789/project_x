@@ -18,7 +18,13 @@ if (isset($_POST['sendMailBtn'])) {
 	$M_Talotyyppi = $_POST['M_talotyyppi'];
 	$M_hissi = $_POST['M_Hissi'];
 	$M_varasto = $_POST['M_varasto'];
-    //$const_mail = 'jarmo.laakko@hotmail.com'
+    
+  if (strpos($K_hissi, 'valintaa') > 0)  {
+    ?><a href="/ota-yhteytta">Takaisin</a> <br><?php
+    die('ERROR: Kerrothan, onko talossa hissi.');
+    
+    
+    }
 
     $to = $toEmail;
     $subject = "Tarjouspyyntö";
@@ -39,6 +45,7 @@ if (isset($_POST['sendMailBtn'])) {
 				<div class="container">
         <h2>Uusi tarjouspyyntö</h2>
         <p>Nimi:> '.$firstName.' '.$lastName.' </p><br/>
+        <p>säpo:> '.$fromEmail.' </p><br/>
         <p>Osoite:> '.$K_osoite.' </p><br/>
         <p>Neliömäärä:> '.$K_neliomaara.' </p><br/>
         <p>Talotyyppi: '.$K_talotyyppi.' </p><br/>
