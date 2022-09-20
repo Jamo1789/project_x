@@ -18,13 +18,56 @@ if (isset($_POST['sendMailBtn'])) {
 	$M_Talotyyppi = $_POST['M_talotyyppi'];
 	$M_hissi = $_POST['M_Hissi'];
 	$M_varasto = $_POST['M_varasto'];
-    
-  if (strpos($K_hissi, 'valintaa') > 0)  {
-    ?><a href="/ota-yhteytta">Takaisin</a> <br><?php
-    die('ERROR: Kerrothan, onko talossa hissi.');
-    
-    
+  $Maksutapa = $_POST['maksutapa'];
+
+  //Tarkista, että käyttäjä valitsee talotyypin
+  if (strpos($K_talotyyppi , 'valintaa') > 0)  {
+    ?><button onclick="history.back()">Takaisin</button><br><?php
+    die('ERROR: Kerrothan, muuttokohteen talotyypin');
     }
+
+    
+  //Tarkista, että käyttäjä valitsee onko hissi vai ei
+  if (strpos($K_hissi, 'valintaa') > 0)  {
+    ?><button onclick="history.back()">Takaisin</button><br><?php
+    die('ERROR: Kerrothan, onko talossa hissi.');
+    }
+  //Tarkista, että käyttäjä valitsee onko varasto vai ei
+    if (strpos($K_varasto, 'valintaa') > 0)  {
+      ?><button onclick="history.back()">Takaisin</button><br><?php
+      die('ERROR: Kerrothan, onko talossasi/taloyhtiössäsi varasto.');
+      }
+//Tarkista, että käyttäjä valitsee onko kantajia vai ei
+      
+    if (strpos($K_kantaja , 'valintaa') > 0)  {
+      ?><button onclick="history.back()">Takaisin</button><br><?php
+      die('ERROR: Kerrothan, onko apunasi omia kantajia.');
+      }
+
+//Tarkista määränpään talotyyppi
+      if (strpos($M_Talotyyppi  , 'valintaa') > 0)  {
+        ?><button onclick="history.back()">Takaisin</button><br><?php
+        die('ERROR: Kerrothan, määränpään talotyypin.');
+        }
+//Tarkista määränpään hissi
+        if (strpos($M_hissi  , 'valintaa') > 0)  {
+          ?><button onclick="history.back()">Takaisin</button><br><?php
+          die('ERROR: Kerrothan, onko määränpäässä hissiä.');
+          }
+//Tarkista määränpään varasto
+          if (strpos($M_varasto  , 'valintaa') > 0)  {
+            ?><button onclick="history.back()">Takaisin</button><br><?php
+            die('ERROR: Kerrothan, onko määränpäässä varastoa.');
+            }
+
+//Tarkista maksutapa
+
+            if (strpos($Maksutapa , 'valintaa') > 0)  {
+              ?><button onclick="history.back()">Takaisin</button><br><?php
+              die('ERROR: Kerrothan, haluamasi maksutavan.');
+              }
+             
+      
 
     $to = $toEmail;
     $subject = "Tarjouspyyntö";
