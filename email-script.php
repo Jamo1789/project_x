@@ -99,6 +99,7 @@ if (isset($_POST['sendMailBtn'])) {
         <p>Talotyyppi määränpää:>'.$M_Talotyyppi.'</p><br/>
         <p>Onko hissiä määränpäässä?> '.$M_hissi.'</p><br/>
         <p>Onko varasto määränpäässä?> '.$M_varasto.'</p><br/>
+        <p>Onko varasto määränpäässä?> '.$Maksutapa.'</p><br/>
 				</div>
 			</body>
 			</html>';
