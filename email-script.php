@@ -20,6 +20,12 @@ if (isset($_POST['sendMailBtn'])) {
 	$M_varasto = $_POST['M_varasto'];
   $Maksutapa = $_POST['maksutapa'];
 
+   //Tarkista, että käyttäjä kirjoittaa oikeanalaisen sähköpostin
+   if (strpos($fromEmail, '@') == 0)  {
+    ?><button onclick="history.back()">Takaisin</button><br><?php
+    die('ERROR: Ilmoita oikea sähköpostiosoite kiitos');
+    }
+
   //Tarkista, että käyttäjä valitsee talotyypin
   if (strpos($K_talotyyppi , 'valintaa') > 0)  {
     ?><button onclick="history.back()">Takaisin</button><br><?php
@@ -64,7 +70,7 @@ if (isset($_POST['sendMailBtn'])) {
 
             if (strpos($Maksutapa , 'valintaa') > 0)  {
               ?><button onclick="history.back()">Takaisin</button><br><?php
-              die('ERROR: Kerrothan, haluamasi maksutavan.');
+              die('ERROR: Kerrothan haluamasi maksutavan.');
               }
              
       
