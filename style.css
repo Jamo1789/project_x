@@ -1362,6 +1362,26 @@ ul.social-icons li {
 	z-index: 100;
 }
 
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 393px) {  
+  .main_heading {font-size:4.5rem;} /*1rem = 16px*/
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+	.main_heading {font-size:4.5rem;} /*1rem = 16px*/
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	.main_heading {font-size:4.5rem;} /*1rem = 16px*/
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+	.main_heading  {font-size:4.5rem;} /*1rem = 16px*/    
+}
+
 .sidenav {
 	height: 100%;
 	width: 0;
@@ -1369,9 +1389,10 @@ ul.social-icons li {
 	z-index: 1;
 	top: 0;
 	left: 0;
-	background-color: #f2f2f2;
+	background-color: #FFBF00;
 	overflow-x: hidden;
 	transition: 0.5s;
+	border: 1px solid black;
 	
 	padding-top: 60px;
 	

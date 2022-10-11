@@ -2,14 +2,14 @@
 get_header();
 ?>
  <section class="py-5 text-center container">
-    <div class="hero-image" style="height: 100px; background-image: url(<?php echo get_theme_file_uri('truck.jpg') ?>">
+    <div class="hero-image" style="height: 100px;">
       <div class="hero-text" style="text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;">
-        <h1 style="font-style: Georgia; color: black; font-size:50px; font-size: 3.5vw;"><?php echo get_the_title(); ?></h1>
+        <h1 class="main_heading" style="font-style: Georgia; color: black;"><?php echo get_the_title(); ?></h1>
 
 
       </div>
