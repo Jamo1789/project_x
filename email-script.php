@@ -19,6 +19,7 @@ if (isset($_POST['sendMailBtn'])) {
 	$M_hissi = $_POST['M_Hissi'];
 	$M_varasto = $_POST['M_varasto'];
   $Maksutapa = $_POST['maksutapa'];
+  $write_message = $_POST['write_message'];
 
    //Tarkista, että käyttäjä kirjoittaa oikeanalaisen sähköpostin
    if (strpos($fromEmail, '@') == 0)  {
@@ -105,7 +106,9 @@ if (isset($_POST['sendMailBtn'])) {
         <p>Talotyyppi määränpää:>'.$M_Talotyyppi.'</p><br/>
         <p>Onko hissiä määränpäässä?> '.$M_hissi.'</p><br/>
         <p>Onko varasto määränpäässä?> '.$M_varasto.'</p><br/>
-        <p>Onko varasto määränpäässä?> '.$Maksutapa.'</p><br/>
+        <p>Onko varasto määränpäässä?> '.$M_varasto.'</p><br/>
+        <p>Maksutapa:?> '.$Maksutapa.'</p><br/>
+        <p>Lähettäjän viesti:?> '.$write_message.'</p><br/>
 				</div>
 			</body>
 			</html>';
