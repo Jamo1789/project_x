@@ -108,7 +108,7 @@ if (isset($_POST['sendMailBtn'])) {
         <p>Onko varasto määränpäässä?> '.$M_varasto.'</p><br/>
         <p>Onko varasto määränpäässä?> '.$M_varasto.'</p><br/>
         <p>Maksutapa:?> '.$Maksutapa.'</p><br/>
-        <p>Lähettäjän viesti:?> '.$write_message.'</p><br/>
+        <p>Lähettäjän viesti:> '.$write_message.'</p><br/>
 				</div>
 			</body>
 			</html>';
