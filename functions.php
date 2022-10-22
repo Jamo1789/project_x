@@ -285,7 +285,7 @@ if(get_the_ID() == 75){ ?>
 
                         <label for="inputPassword">Viesti <span style="color: #FF0000"></span></label>
                         <div class="form-label-group">
-                            <textarea  id="message" name="message" class="form-control" placeholder="Viesti" name="write_message"></textarea>
+                            <textarea  id="message" class="form-control" placeholder="Viesti" name="write_message"></textarea>
                         </div> <br/>
 												<div class="col-auto">
 													 <div class="form-check mb-2">
