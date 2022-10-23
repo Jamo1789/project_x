@@ -229,7 +229,7 @@ if(get_the_ID() == 75){ ?>
 
 
 																								<label for="inputPassword">Talotyyppi <span style="color: #FF0000">*</span></label>
-																								<select class="form-select form-select-lg mb-3" style="margin-right: auto; height: 47px;;" id="M_talotyyppi" name="M_Talotyyppi" required>
+																								<select class="form-select form-select-lg mb-3" style="margin-right: auto; height: 47px;;" id="M_Talotyyppi" name="M_Talotyyppi" required>
 																									<option value="Ei valintaa">Ei valintaa</option>
 																									<option value="Kerrostalo">Kerrostalo</option>
 																									<option value="Rivitalo">Rivitalo</option>
@@ -285,7 +285,7 @@ if(get_the_ID() == 75){ ?>
 
                         <label for="inputPassword">Viesti <span style="color: #FF0000"></span></label>
                         <div class="form-label-group">
-                            <textarea  id="message" class="form-control" placeholder="Viesti" name="write_message"></textarea>
+                            <textarea  id="message" class="form-control" placeholder="Viesti" name="message"></textarea>
                         </div> <br/>
 												<div class="col-auto">
 													 <div class="form-check mb-2">
